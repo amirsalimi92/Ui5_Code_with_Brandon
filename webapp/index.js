@@ -1,8 +1,11 @@
-sap.ui.define(['sap/ui/core/mvc/XMLView'], function (XMLView) {
-  'use strict',
-    XMLView.create({
-      viewName: 'myapp.view.App'
-    }).then(function (oView) {
-      oView.placeAt('content')
-    })
+sap.ui.define(['sap/ui/core/ComponentContainer'], function (CompCont) {
+  'use strict'
+
+  new CompCont({
+    name: 'myapp',
+    settings: {
+      id: 'myapp'
+    },
+    async: true
+  }).placeAt('content')
 })
