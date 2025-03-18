@@ -7,13 +7,8 @@
             <pages>
                 <Page title="{i18n>homePageTitle}">
                     <content>
-                        <Panel headerText="{i18n>helloPanelTitle}">
-                            <content>
-                                <Button class="sapUiSmallMarginEnd" text="{i18n>buttonShowHello}" press=".onShowHello" />
-                                <Input class="sapUiSmallMarginEnd" value="{/recipient/name}" valueLiveUpdate="true" width="60%" />
-                                <Text class="sapUiSmallMargin" text="Hello {/recipient/name}" />
-                            </content>
-                        </Panel>
+                        <!-- Reference to another view -->
+                        <mvc:XMLView viewName="myapp.view.HelloPanel"/>
                     </content>
                 </Page>
             </pages>
