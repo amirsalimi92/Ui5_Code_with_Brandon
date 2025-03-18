@@ -15,12 +15,7 @@
   "sap.ui": {
     "_version": "1.1.0",
     "icons": {
-      "icon": "<icon>",
-      "favIcon": "favicon.ico",
-      "phone": "<phone>",
-      "phone@2": "<phone@2>",
-      "tablet": "<tablet>",
-      "tablet@2": "<tablet@2>"
+      "favIcon": "favicon.ico"
     },
     "deviceTypes": {
       "desktop": true,
