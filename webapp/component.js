@@ -1,19 +1,11 @@
+console.log('Componenet')
 sap.ui.define(
-  [
-    'sap/ui/core/UIComponent',
-    'sap/ui/model/json/JSONModel',
-    'sap/ui/model/resource/ResourceModel'
-  ],
-  function (UIComp, JSONModel, ResModel) {
+  ['sap/ui/core/UIComponent', 'sap/ui/model/json/JSONModel'],
+  function (UIComp, JSONModel) {
     'use strict'
-    return UIComp.extend('myapp.Component', {
+    return UIComp.extend('myapp.component', {
       metadata: {
-        rootView: {
-          viewName: 'myapp.view.App',
-          type: 'XML',
-          async: true,
-          id: 'app'
-        }
+        manifest: 'json'
       },
 
       init: function () {
@@ -28,14 +20,6 @@ sap.ui.define(
         }
         var oModel = new JSONModel(oData)
         this.setModel(oModel)
-
-        // Set i18n model
-        var i18nModel = new ResModel({
-          bundleName: 'myapp.i18n.i18n',
-          supportedLocales: [''],
-          fallbackLocale: ''
-        })
-        this.setModel(i18nModel, 'i18n')
       }
     })
   }

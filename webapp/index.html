@@ -4,15 +4,16 @@
 <head>
     <script id="sap-ui-bootstrap" src="https://openui5.hana.ondemand.com/resources/sap-ui-core.js"
         data-sap-ui-theme="sap_bluecrystal" data-sap-ui-libs="sap.m" data-sap-ui-compat-version="edge"
-        data-sap-ui-async="true" data-sap-ui-on-init="module:myapp/index" data-sap-ui-resource-roots='{"myapp": "./"}'>
+        data-sap-ui-async="true" data-sap-ui-on-init="module:sap/ui/core/ComponentSupport"
+        data-sap-ui-resource-roots='{"myapp": "./"}'>
         </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Learning Ui5</title>
 </head>
 
-<body>
-    <div class="sapUiBody" id="content"></div>
+<body class="sapUiBody" id="content">
+    <div data-sap-ui-component data-name="myapp" data-id="container" data-settings='{"id" : "myapp"}'></div>
 </body>
 
 </html>
