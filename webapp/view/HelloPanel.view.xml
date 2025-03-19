@@ -4,6 +4,7 @@
 
     <Panel headerText="{i18n>helloPanelTitle}">
         <content>
+            <Button id="helloDialogButton" class="sapUiSmallMarginEnd" text="{i18n>helloDialogButton}" press=".onOpenDialog" />
             <Button class="sapUiSmallMarginEnd" text="{i18n>buttonShowHello}" press=".onShowHello" />
             <Input class="sapUiSmallMarginEnd" value="{/recipient/name}" valueLiveUpdate="true" width="60%" />
             <Text class="sapUiSmallMargin" text="Hello {/recipient/name}" />
